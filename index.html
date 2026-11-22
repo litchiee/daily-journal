@@ -67,7 +67,7 @@ input[type=color]{width:100%;height:34px;border:1px solid #382e1c;background:#1a
 <script>
 const $=id=>document.getElementById(id),R=document.documentElement.style;
 const ta=$('ta'),m=$('m'),sheet=$('sheet'),ov=$('ov'),ln=$('line'),wrap=$('w'),beam=$('beam'),cone=$('cone'),lm=$('lm'),pan=$('set');
-const SB_URL='https://fyhywoqccbjcnoapjixb.supabase.co/rest/v1/',SB_KEY='sb_publishable_lVZEfbxvjaDfEsqYXTg8bw_yDET9nHd'; /* ← À REMPLIR : « Project URL » et clé « anon public » de votre projet Supabase (voir README.md) */
+const SB_URL='https://fyhywoqccbjcnoapjixb.supabase.co',SB_KEY='sb_publishable_lVZEfbxvjaDfEsqYXTg8bw_yDET9nHd'; /* ← À REMPLIR : « Project URL » et clé « anon public » de votre projet Supabase (voir README.md) */
 let NS='';try{const r=new URL(SB_URL).hostname.split('.')[0],j=JSON.parse(localStorage.getItem('sb-'+r+'-auth-token')||'null');if(j&&j.user)NS=j.user.id+':'}catch(e){}
 const S=(k,v)=>{try{localStorage.setItem(NS+k,v)}catch(e){}},G=k=>{try{return localStorage.getItem(NS+k)}catch(e){return null}};
 if(NS&&!G('dt:migrated')){try{const ks=[];for(let i=0;i<localStorage.length;i++)ks.push(localStorage.key(i));ks.forEach(k=>{if(/^dt:(day|mask|pos):/.test(k)||k==='dt:prefs'){if(localStorage.getItem(NS+k)===null)localStorage.setItem(NS+k,localStorage.getItem(k))}})}catch(e){}S('dt:migrated','1')}
