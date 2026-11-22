@@ -48,6 +48,11 @@ input[type=color]{width:100%;height:34px;border:1px solid #382e1c;background:#1a
 .ent{display:block;width:min(720px,100%);text-align:left;background:none;border:0;border-bottom:1px solid #2a2418;padding:14px 4px;color:#e2d6bb;cursor:pointer}
 #auth{inset:0;z-index:30;background:rgba(8,6,4,.97);place-items:center}#auth.on{display:grid}#auth .card{width:min(360px,88vw);text-align:center}#auth h1{font:italic 400 28px Georgia,serif;margin:0 0 6px}#auth p{opacity:.65;font-style:italic;margin:0 0 22px}#auth input{display:block;width:100%;box-sizing:border-box;margin:0 0 10px;padding:11px 14px;background:#14100a;border:1px solid #382e1c;border-radius:20px;color:inherit;font:inherit}#auth .ch button{background:#1a150d;color:#cdbf9f;border:1px solid #382e1c;border-radius:20px;padding:9px 16px;cursor:pointer;font:14px Georgia,serif}#auth .ch button:hover{border-color:var(--gold)}#amsg{min-height:1.4em;font-size:13px;opacity:.8;margin:10px 0}#auth .b{font-size:12px;opacity:.7}
 .ent:hover{background:#ffffff08}.ent small{display:block;opacity:.55;margin-bottom:4px;letter-spacing:.1em}.ent span{font:13px 'Courier New',monospace;opacity:.8}
+@media (max-width:600px){
+ #date{top:max(10px,env(safe-area-inset-top));left:12px;max-width:36vw;font-size:12px;letter-spacing:.03em;line-height:1.3}
+ #bt{top:max(6px,env(safe-area-inset-top));right:6px;gap:2px;font-size:12px;letter-spacing:.03em}
+ .b{padding:6px 5px}
+}
 </style></head>
 <body>
 <div id="sheet"><div id="line"></div><div id="col"><div id="w"><div id="inv"></div><div id="ov"></div><pre id="m"></pre><textarea id="ta" spellcheck="false" autocapitalize="sentences" aria-label="Page du jour"></textarea></div></div></div>
